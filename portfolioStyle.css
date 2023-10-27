@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+   /* overflow:hidden; */
+   background-image:url("images/portfolio_back.png");
+   background-size:contain;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+   text-align: center;
+   scroll-behavior: smooth;
+   background-attachment: fixed;
+}
+nav{
+    /* width:90%; */
+    background:white;
+    box-sizing:border-box;
+    margin:20px 0;
+    padding:0 30px;
+    height:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:end;
+}
+ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    padding:20px;
+    font-size:0.8rem;   
+    color:rgb(20, 15, 15);
+}
+.block{
+    background:white;
+    box-sizing:border-box;
+}
+h1{
+    font-family: Bodoni MT;
+    font-size: 36pt;
+   
+}
+h2{
+    font-size: 12pt;
+    font-weight:300;
+    max-width: 340px;
+}
+h3{
+    font-size: 11pt;
+    font-weight:300;
+    max-width: 650px;
+}
+button{
+    /* background-color: #f0d843; */
+    background-color:black;
+    border:none;
+    color:#f0d843;
+}
+/*button primary*/
+.primary{
+    width:160px;
+    height:40px;
+    border-radius:26px;
+    margin-top:30px;
+    font-weight:500;
+}
+.secondary{
+    width:80px;
+    height:25px;
+    border-radius:12px;
+    font-size:0.7rem;
+    background:rgb(37, 31, 31);
+    color:white;
+}
+.heroback{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    height:570px;
+    margin:0 auto;
+}
+.innerhero{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    padding:0px;
+}
+.herotext{
+    text-align: left;
+    margin-right:30px;
+}
+.heroimg{
+    width:330px;
+    height:330px;
+    background-image:url("images/russ\ for\ figma.png");
+    background-size: contain;
+}
+.socials{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    margin-top:100%;
+    padding-top:20px;
+}
+.socials span{
+    width:40px;
+    height:40px;
+    background:none;
+    border:1px black solid;
+    border-radius:50%;
+    padding:0 auto;
+    margin: 0 10px;
+}
+/* mini section for about me */
+.miniabout{
+    margin-top:40px;
+    height:340px;
+    background:rgb(37, 31, 31);
+    color:white;
+}
+.yellowhead{
+    color:#f0d843;
+    margin-top:30px;
+}
+.blackhead{
+    color:black;
+    margin-top:30px;
+}
+
+
+
+
+
+.gallery{
+    margin-top:40px;
+    height: fit-content;
+    padding-bottom:50px;
+}
+.fronttext{
+    margin:60px 0 10px;
+    font-weight:500;
+    font-size:1.2rem;
+}
+.description{
+    margin:25px 0 45px 0;
+}
+.galleryline{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    width:70%;
+    max-width: 950px;
+    height:200px;
+    margin:0 auto;
+    
+}
+.galleryitem{
+    /* padding:10px; */
+    margin: 20px;
+    width:200px;
+    box-sizing: border-box;
+    height:90%;
+    background-size:cover;
+    border:1px solid rgb(20, 15, 15);
+}
+
+.itemf1{
+    background-image:url("images/home.png");
+}
+.itemf2{
+    background-image:url("images/dice5.png")
+}
+.itemf3{
+    background-image:url("images/caclulator.png");
+}
+.itemv1{
+    background-image:url("images/girl\ better.jpg");
+}
+.itemv2{
+    background-image:url("images/itispractical.jpg");
+}
+.itemv3{
+    background-image:url("images/teen.png");
+}
+.skills{
+    margin-top:40px;
+}

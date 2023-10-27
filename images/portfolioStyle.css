@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+   overflow:hidden;
+   background-image:url();
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+   text-align: center;
+}
+nav{
+    width:90%;
+    max-width:1000px;
+    height:70px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:end;
+}
+ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    padding:20px;
+    font-size:0.8rem;   
+    color:rgb(20, 15, 15);
+}
+.block{
+    background:white;
+    box-sizing:border-box;
+}
+h1{
+    font-size: 36pt;
+}
+h2{
+    font-size: 12pt;
+    font-weight:300;
+    max-width: 340px;
+}
+button{
+    background-color: #f6e056;
+    border:none;
+    color:rgb(20, 15, 15);
+}
+/*button primary*/
+.primary{
+    width:160px;
+    height:40px;
+    border-radius:26px;
+    margin-top:40px;
+    font-weight:500;
+}
+.secondary{
+    width:80px;
+    height:25px;
+    border-radius:12px;
+    font-size:0.7rem;
+    background:rgb(37, 31, 31);
+    color:white;
+}
+.heroback{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    height:570px;
+    margin:0 auto;
+}
+.innerhero{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    padding:10px;
+}
+.herotext{
+    text-align: left;
+    margin-right:30px;
+}
+.heroimg{
+    width:340px;
+    height:340px;
+    background-image:url("russ\ for\ figma.png");
+    background-size: contain;
+}
+
+
