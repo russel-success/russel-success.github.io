@@ -3,11 +3,28 @@
     padding:0;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*defining all used colors*/
+:root{
+    --my-black:rgb(20, 15, 15);
+    --my-yellow:#f0d843;
+    --my-maron:#ff7d31;
+
 }
 body{
    /* overflow:hidden; */
-   background-image:url("images/portfolio_back.png");
-   background-size:contain;
+   background-image:url("images/idesign.jpg");
+   background-size:cover;
    display:flex;
    justify-content: center;
    align-items:center;
@@ -15,6 +32,8 @@ body{
    text-align: center;
    scroll-behavior: smooth;
    background-attachment: fixed;
+   backdrop-filter:grayscale(100%);
+   /* backdrop-filter:blur(0px); */
 }
 nav{
     /* width:90%; */
@@ -27,6 +46,19 @@ nav{
     flex-direction:column;
     justify-content: space-around;
     align-items:end;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    text-decoration:underline;
+}
+hr{
+    color:var(--my-yellow);
+    width:70%;
+    align-self: center;
+    margin:60px 0;
+    border-top:dotted 1px var(--my-black);
+    opacity:0.2;
 }
 ul{
     display:flex;
@@ -41,25 +73,64 @@ li a{
     text-decoration: none;
     padding:20px;
     font-size:0.8rem;   
-    color:rgb(20, 15, 15);
+    color:var(--my-black);
 }
+/* reusable blocks */
 .block{
     background:white;
     box-sizing:border-box;
+  
 }
+.threediv{
+    text-align:center;
+    display:flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction:row;
+    max-width:85%;
+    margin-bottom:5%;
+}
+.threediv img{
+    width:30px;
+    height:30px;
+    box-sizing: border-box;
+}
+.threeitem>h2{
+    font-size: 2rem;
+    font-weight:400;
+}
+.threeitem>h3{
+    text-align:center;
+    font-weight:300;
+}
+.threeitem{
+    text-align:center;
+    padding:20px;
+}
+.proof{
+    background:var(--my-maron);
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:10px 90px ;
+    justify-content: space-between;
+    width:100%;
+    max-width: 100vw;
+}
+
+
 h1{
     font-family: Bodoni MT;
-    font-size: 36pt;
+    font-size: 40pt;
    
 }
 h2{
     font-size: 12pt;
-    font-weight:300;
+    font-weight:400;
     max-width: 340px;
 }
 h3{
-    font-size: 11pt;
-    font-weight:300;
+    font-size: 11.5pt;
+    font-weight:400;
     max-width: 650px;
 }
 button{
@@ -73,7 +144,7 @@ button{
     width:160px;
     height:40px;
     border-radius:26px;
-    margin-top:30px;
+    margin-top:35px;
     font-weight:500;
 }
 .secondary{
@@ -81,18 +152,24 @@ button{
     height:25px;
     border-radius:12px;
     font-size:0.7rem;
-    background:rgb(37, 31, 31);
-    color:white;
+    background:transparent;
+    border:1px solid var(--my-black);
+    color:var(--my-black);
 }
 .heroback{
     display:flex;
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
-    width:90%;
-    max-width: 1000px;
-    height:570px;
+    width:100%;
+    max-width: 100vw;
+    /* height:570px; */
+    padding:70px 0;
     margin:0 auto;
+    /*box-shadow:0.5px 0.5px 20px -15px;
+    /*
+    border-top:1px solid rgb(192, 190, 190);
+    border-bottom:1px solid rgb(192, 190, 190); */
 }
 .innerhero{
     display:flex;
@@ -103,45 +180,108 @@ button{
 }
 .herotext{
     text-align: left;
-    margin-right:30px;
+    margin-right:40px;
 }
 .heroimg{
     width:330px;
     height:330px;
-    background-image:url("images/russ\ for\ figma.png");
+    background-image:url("images/russ\ for\ figma\ 1.png");
     background-size: contain;
 }
 .socials{
     display:flex;
     flex-direction:row;
-    align-items: center;
+    align-items:center;
     justify-content:center;
     margin-top:100%;
     padding-top:20px;
 }
-.socials span{
-    width:40px;
-    height:40px;
+.socials span img{
+    width:25px;
+    height:25px;
     background:none;
-    border:1px black solid;
-    border-radius:50%;
     padding:0 auto;
     margin: 0 10px;
 }
+.iDesignAnimate{
+    padding:70px 0;
+    width:100px;
+    text-align:center;
+}
+.outofform{
+    position:relative;
+}
+form{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:3% 5%;
+    background:var(--my-maron);
+    width:25%;
+    position:absolute;
+    top:2%;
+    opacity:0;
+    display:none;
+    box-shadow: 0.5px 2px 2px -10px var(--my-black);
+
+}
+
+.close{
+    width:50px;
+    height: 50px;
+    margin-left:270px;
+    cursor:pointer;
+}
+.close{
+    cursor:pointer;
+}
+
+input{
+    padding:5% 15%;
+    text-align:left;
+    width:fit-content;
+    height:fit-content;
+    border:none;
+    background:rgba(179, 87, 2, 0.822);
+}
+label{
+    text-align:left;
+    margin:3% 0;
+}
+#formMessage{
+    height:70px;
+    max-height: fit-content;
+}
+form>button{
+    font-weight:600;
+    color:rgba(179, 87, 2, 0.822);
+ 
+}
+
+
+
+
 /* mini section for about me */
 .miniabout{
     margin-top:40px;
-    height:340px;
-    background:rgb(37, 31, 31);
-    color:white;
+    padding:70px 0;
+    /* height:340px; */
+    background:rgb(255, 245, 158);
+    color:black;
+}
+.miniabout button{
+    margin:0 auto;
 }
 .yellowhead{
-    color:#f0d843;
-    margin-top:30px;
+    color:var(--my-black);
+    margin-bottom:50px;
+    text-align:left;
+    border-bottom:var(--my-black) 1px solid;
 }
 .blackhead{
-    color:black;
+    color:var(--my-yellow);
     margin-top:30px;
+    border-bottom:var(--my-yellow) 1px solid;
 }
 
 
@@ -152,6 +292,9 @@ button{
     margin-top:40px;
     height: fit-content;
     padding-bottom:50px;
+    background:var(--my-black);
+    color:var(--my-yellow);
+    
 }
 .fronttext{
     margin:60px 0 10px;
@@ -168,25 +311,37 @@ button{
     justify-content:space-between;
     width:70%;
     max-width: 950px;
-    height:200px;
+    height:600px;
     margin:0 auto;
+    background:none;
     
 }
 .galleryitem{
     /* padding:10px; */
     margin: 20px;
-    width:200px;
+    width:350px;
     box-sizing: border-box;
-    height:90%;
+    height:80%;
     background-size:cover;
     border:1px solid rgb(20, 15, 15);
+    filter:grayscale(100%);
+    color:var(--my-yellow);
+}
+.galleryitem:hover{
+    filter:grayscale(0%);
+    width:450px;
+    transition:0.3s ease-in-out;
+}
+
+.primary a{
+    color:var(--my-yellow);
 }
 
 .itemf1{
     background-image:url("images/home.png");
 }
 .itemf2{
-    background-image:url("images/dice5.png")
+    background-image:url("images/diceexpo.jpg")
 }
 .itemf3{
     background-image:url("images/caclulator.png");
@@ -195,11 +350,37 @@ button{
     background-image:url("images/girl\ better.jpg");
 }
 .itemv2{
-    background-image:url("images/itispractical.jpg");
+    background-image:url("images/childday.jpg");
 }
 .itemv3{
     background-image:url("images/teen.png");
 }
 .skills{
     margin-top:40px;
+    
+}
+.skillset>h2{
+    font-size:2rem;
+}
+.skillset>h3{
+    font-size: 1.5rem;
+}
+
+.skillset{
+    margin-top:60px;
+}
+.skillline{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-top:10%;
+    font-size: 3rem;
+    border-bottom:1px dotted var(--my-black);
+    margin-bottom:100px;
+}
+.skillitem{
+    display:flex;
+    flex-direction:column;
+    margin:10% 20%;
 }

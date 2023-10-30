@@ -6,69 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Russel Lenya</title>
     <link rel="stylesheet" href="portfolioStyle.css">
-    <!include fonts, montserrat from googleFonts>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
+   
     <nav>
         <ul>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">my works</a></li>
-            <button class="secondary btn">hire me</button>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#gallery">my works</a></li>
+            <li><a href="#skills">my skills</a></li>
+
+            <button class="secondary btn email">Email me</button>
         </ul>
     </nav>
-    <div class="heroback block"><!flow 1 column 2 rows>
+
+    <form action="#">
+        <div class="closediv"><span class="material-symbols-outlined close">
+            cancel</span></div>
+        <label for="name">Name</label>
+        <input type="text" value="" name="name" placeholder="">
+        <label for="email">Email</label>
+        <input type="email" value="" name="email" placeholder=""><br>
+        <label for="message">Leave a message</label>
+        <input type="text" name="message" id="formMessage" value="">
+        <button class="primary" id="formButton">submit</button>
+
+    </form>
+
+    <div class="outofform">
+    <div class="hero heroback block"><!flow 1 column 2 rows>
         <div class="innerhero"><!flow 2 columns 1 row>
 
         <div class="textAndPic herotext text block">
             <h1>Russel Lenya</h1>
-            <h2>graphic artist - frontend developer- UI designer- Animation Enthusiast </h2>
-            <button class="primary btn">hire me</button>
+            <h2>graphic artist - frontend developer- UI designer- CS student and tutor </h2>
+            <button class="primary btn email">Email me</button>
         </div>
 
         <div class="textAndPic heroimg block">
             <!img src="" alt="russel's photo">
 
             <div class="socials">
-                <span>fb</span><span>wa</span><span>ig</span>
+                <span><a href="https://www.facebook.com/profile.php?id=100089704389895"><img src="images/facebook.png" alt="fb"></a></span><span><a href="#"><img src="images/instagram.png" alt="ig"></a><a href="https://www.facebook.com/profile.php?id=100089704389895"></span><span><img src="images/whatsapp.png" alt="fb"><a></a></span>
             </div>
         </div>
 
         </div>
         <div class="iDesignAnimate">iDesign</div>
     </div>
+
+    <div class="proof threediv">
+        <div class="proofitem threeitem">
+            <div class="prooftext">
+                <h4>
+                    15+ satisfied clients
+                </h4>
+                <h3>for graphic art and web design projects</h3>
+            </div> 
+        </div>
+        <div class="proofitem threeitem">
+            <div class="prooftext">
+                <h4>
+                    10+ young people trained
+                </h4>
+                <h3>in digital literacy at TRIHOFA Limbe</h3>
+            </div> 
+        </div>
+        <div class="proofitem threeitem">
+            <div class="prooftext">
+                <h4>
+                    15+ months of experience
+                </h4>
+                <h3>in graphic art and computer tutoring</h4>
+            </div> 
+        </div>
+
+    </div>
+
+
     <!-- mini about me section -->
-    <div class="miniabout block heroback">
+    <div class="miniabout block heroback" id="about">
         <h1 class="yellowhead">about Me</h1>
-        <h3>I am a final year undergrad Computer Science student at the University of Buea, Cameroon. I have so much interest in <b>problem solving and design</b> amidst a whole lot more, which simply defines me as an avid designer.<br><br> In the process of refining my skill, i've had the opportunity of working for a church; my church, a printing agency, media influencers and family.<br><br> <b>I can be both technical and creative</b> in most situations which gives me a good stand in UI and frontend development and a wide range of graphic art. </h3>
+        <!-- three sections -->
+        <div class="threediv">
+            <div class="threeitem">
+            <h2>
+                Education
+            </h2>
+            <h3>
+                Currently, I am a final year <b>Computer Science undergrad</b> at the university of Buea. Not without challenges, I have a track record of successes in my department. I am yet a very enthusiastic learner 
+            </h3>
+        </div>
+        <div class="threeitem">
+            <h2>
+                Interests
+            </h2>
+            <h3>
+                I have an eye for good design. <b>I am in fact very passionate about graphic art in many forms</b>. And because I am more inclined to visual works, I am a growing UI/UX designer and frontend developer working towards being fullstack.
+            </h3>
+        </div>
+        <div class="threeitem">
+            <h2>
+                Achievements
+            </h2>
+            <h3>
+                As of now, <b>I work a designer for my church</b> <a href="#">Maximum Life Ministries</a> where deliver posters for events, quotes and other eye catching visuals which represent our excellence and feed the right message. I also work with a <b>printing agency</b> in Limbe <a href="#">iconicPrint</a> 
+            </h3>
+            
+        </div>
+      
+        </div>
+        <button class="primary"><a>know more >></a></button>
+
     </div>
     <!-- big section to display my works...note -->
-    <div class="heroback block gallery">
+    <div class="heroback block gallery" id="gallery">
         <!-- blackhead represents all major headings on whitebacks in bodoni mt and black..similar to brownhead -->
         <h1 class="blackhead">my Works</h1>  
         <h2 class="fronttext">Frontend Projects</h2>
-        <h3 class="description">I have a <b>simplistic and creative</b> approach towards frontend projects. So far a church website in progress, an interesting dice game, calculator and more.</h3>
-        <!-- <div class="frontend block"> -->
+        <h3 class="description">I have a <b>simplistic and creative</b> approach towards frontend projects. So far a composite website for my church, <a href="#">Maximum Life Ministries</a> in progress, an interesting dice game, calculator and more. Have me work with your project!</h3>
+        <!--<div class="frontend block"-->
            
            <div class="galleryline block">
                 <div class="galleryitem itemf1 block"></div>
                 <div class="galleryitem itemf2 block"></div>
                 <div class="galleryitem itemf3 block"></div>
            </div>
-           <a href="#">view all ></a>
+           <button class="primary"><a href="#">view all >></a></button> <hr>
         <!-- </div>    -->
         <h2 class="fronttext">Graphic Art Projects</h2>
-        <h3 class="description">I deliver <b>excellence</b> on a fair variety of visual design and branding needs. I do vector illustrations for story tellers, collage presentations and a lot more</h3>
+        <h3 class="description">I deliver <b>excellence</b> on a fair variety of visual design and branding needs. I do vector illustrations for story tellers, collage presentations and a lot more. Let's talk about it!</h3>
            <div class="galleryline block">
             <div class="galleryitem itemv1 block"></div>
             <div class="galleryitem itemv2 block"></div>
             <div class="galleryitem itemv3 block"></div>
        </div>
-       <a href="#">view all ></a>
-
+       <button class="primary"><a>full gallery >></a></button>
+      
     </div>
-    <div class="heroback skills block">
-       <h1 class="blackhead">my Skill Set</h1>
-
+    <div class="heroback skills block" id="skills">
+       <h1 class="yellowhead">my Skill Set</h1>
+       <!-- <h2>
+        I possess a fairly wide range of skills in and around the same area; design and development.I also happen to love teaching what I understand and what already works for me. I've been a computer science teacher for young people at <a href="#">TRIHOFA</a>, a top youth empowerment initiative in Limbe Cameroon. I also have a heart for teamwork, i love teamwork. I have participate in two major hackathons where I could work with a team under pressure and it was a great experience.
+        I've been able to compete at
+       </h2> -->
+       <h3>
+        I possess a fairly wide range of skills in and around the same area; design and development.
+       </h3>
+       <div class="skillset block">
+        <h2>Frontend Technologies</h2>
+        <div class="skillline block">
+        <div class="skillitem block">
+            <div class="skillvalue" id="html">
+                65%
+            </div>
+            <h3>HTML5</h3>
+        </div>
+        <div class="skillitem block">
+            <div class="skillvalue" id="css">
+                65%
+            </div>
+            <h3>CSS3</h3>
+        </div>
+        <div class="skillitem block">
+            <div class="skillvalue" id="js">
+                30%
+            </div>
+            <h3>Javascript</h3>
+        </div>
     </div>
+
+    <div class="skillset block">
+        <h2>UI design and Graphic Art</h2>
+        <div class="skillline block">
+        <div class="skillitem block">
+            <div class="skillvalue" id="fg">
+                50%
+            </div>
+            <h3>Figma</h3>
+        </div>
+        <div class="skillitem block">
+            <div class="skillvalue" id="ps">
+                65%
+            </div>
+            <h3>Adobe Photoshop</h3>
+        </div>
+        <div class="skillitem block">
+            <div class="skillvalue" id="ai">
+                60%
+            </div>
+            <h3>Adobe Illustrator</h3>
+        </div>
+    </div>
+
+    <div class="skillset block">
+        <h2>Programming</h2>
+        <div class="skillline block">
+        <div class="skillitem block">
+            <div class="skillvalue" id="java">
+                35%
+            </div>
+            <h3>Java</h3>
+        </div>
+        <div class="skillitem block">
+            <div class="skillvalue" id="cpp">
+                30%
+            </div>
+            <h3>C/C++</h3>
+        </div>
+       </div>
+</div>
+    </div>
+    <script src="portfolioScript.js"></script>
+</div>
 </body>
+
 </html>
